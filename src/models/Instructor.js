@@ -1,10 +1,8 @@
-const mongoose = require('mongoose');
-
-const facultySchema = new mongoose.Schema(
+const InstructorSchema = new mongoose.Schema(
   {
     name: {
       type: String,
-      default: 'Unknown Faculty',
+      default: 'Unknown Instructor',
     },
     code: {
       type: String,
@@ -32,5 +30,4 @@ const facultySchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-module.exports = mongoose.model('Faculty', facultySchema);
-
+module.exports = mongoose.model('Instructor', InstructorSchema);
